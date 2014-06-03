@@ -16,13 +16,17 @@ public class Liste {
 			}
 		}
 		if(flag){
-			countList.add(0);
+			countList.add(1);
 			wordList.add(s);
 		}
 		
 	}
 	
 	public String toString() {
-		return "";
+		String s = "";
+		for(int i=0; i<wordList.size(); i++) {
+			s += "(" + wordList.get(i) + ", " + countList.get(i) + ")";
+		}
+		return s;
 	}
 }

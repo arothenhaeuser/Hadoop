@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+
+public class ListHandler {
+	ArrayList<Liste> liste = new ArrayList<Liste>();
+	
+	public void add(Liste l) {
+		
+	}
+	
+	public String toString() {
+		return "";
+	}
+}

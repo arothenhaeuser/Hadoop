@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		ListHandler handler = new ListHandler();
+		Test test = new Test();
+		try{
+			while(test.hasNext()){
+				handler.add(test.next());
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		//output
+		//System.out.println(handler);
+		handler.toString();
+		System.out.println("Anzahl Listen: " + handler.count);
+		System.out.println("Anzahl Wörter: " + test.count);
+		System.out.println("Anzahl Zeichen (ohne entfernte Sonderzeichen): " + (handler.sum()+test.count));
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		ListHandler handler = new ListHandler();
+		Test test = new Test();
+		try{
+			while(test.hasNext()){
+				handler.add(test.next());
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		//output
+		//System.out.println(handler);
+		handler.toString();
+		System.out.println(test.count);
+		System.out.println(handler.sum()+test.count);
+	}
+
+}

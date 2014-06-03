@@ -7,19 +7,14 @@ public class Liste {
 	ArrayList<Integer> countList = new ArrayList<Integer>();
 	
 	public void add(String s) {
-		boolean flag = true;
 		for(int i=0; i<wordList.size(); i++) {
 			if(wordList.get(i).equals(s)) {
 				countList.set(i, countList.get(i)+1);
-				flag=false;
-				break;
+				return;
 			}
 		}
-		if(flag){
-			countList.add(1);
-			wordList.add(s);
-		}
-		
+		countList.add(1);
+		wordList.add(s);		
 	}
 	
 	public String toString() {
@@ -28,5 +23,13 @@ public class Liste {
 			s += "(" + wordList.get(i) + ", " + countList.get(i) + ")";
 		}
 		return s;
+	}
+	
+	public int sum(){
+		int sum = 0;
+		for(int i=0; i<countList.size(); i++){
+			sum += countList.get(i)*wordList.get(0).length();
+		}
+		return sum;
 	}
 }

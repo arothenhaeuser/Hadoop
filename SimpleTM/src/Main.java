@@ -1,22 +1,34 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
 
 public class Main {
 
 	public static void main(String[] args) {
 		ListHandler handler = new ListHandler();
-		IO io = new IO();
+		Test test = new Test();
 		try{
-			while(true){
-				handler.add(io.getNext());
-				System.out.println("ich arbeite noch");
+			while(test.hasNext()){
+				handler.add(test.next());
 			}
 		}
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		//output
-		//System.out.println(handler);
-		handler.toString();
-		System.out.println(io.count);
+		System.out.println("Anzahl Listen: " + handler.count);
+		System.out.println("Anzahl Wörter: " + test.count);
+		System.out.println("Anzahl Zeichen (ohne entfernte Sonderzeichen): " + (handler.sum()+test.count));
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter("results.txt", "UTF-8");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		writer.println(handler);
+		writer.close();
 	}
 
 }

@@ -8685,3 +8685,49 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2014-06-03 23:05:29.312 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-06-03 23:05:36.435
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-06-03 23:05:36.516
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Andreas Rothenhäuser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:20:56.750
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2f9a4401)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5a097a83)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:20:56.754
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2f9a4401)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5a097a83)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:20:56.757
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.forwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@46e64760)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$2@329b4b8b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:20:56.760
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.forwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@46e64760)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$2@329b4b8b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:26:40.623
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2f9a4401)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@648100de)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:26:40.626
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2f9a4401)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@648100de)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:26:40.630
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.forwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@46e64760)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$2@42fa1554)}
+
+!ENTRY org.eclipse.ui 4 4 2014-06-03 23:26:40.633
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.forwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@46e64760)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$2@42fa1554)}

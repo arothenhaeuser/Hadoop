@@ -21,6 +21,7 @@ public class Test {
 	public String next(){
 		String s = scan.next();
 		s = s.replaceAll("\\W", "");
+		s = s.replaceAll("\\d", "");
 		count++;
 		return s;
 	}

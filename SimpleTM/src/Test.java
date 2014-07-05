@@ -11,7 +11,7 @@ public class Test {
 	
 	public Test(){
 		try {
-			stream = new FileInputStream("amazon_reviews_de_100000.txt");
+			stream = new FileInputStream("data/amazon_reviews_de_100000.txt");
 			scan = new Scanner(stream, "UTF-8");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
